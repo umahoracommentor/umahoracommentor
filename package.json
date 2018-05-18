@@ -1,0 +1,22 @@
+{
+  "name": "umahoracommentor",
+  "version": "1.0.0",
+  "description": "Projeto para promover aproximação entre empreendedores e mentores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelohenrique180/umahoracommentor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelohenrique180/umahoracommentor/issues"
+  },
+  "homepage": "https://github.com/marcelohenrique180/umahoracommentor#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
