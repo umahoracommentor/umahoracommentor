@@ -1,0 +1,13 @@
+@import "normalize";
+
+.navigation {
+  .list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    .item {
+      margin: .5em;
+    }
+  }
+}
