@@ -359,7 +359,8 @@ header {
     margin: 1em; }
 
 .our-mentors .mentors-list {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   @media screen and (max-width: 500px) {
     .our-mentors .mentors-list {
       flex-direction: column; } }
@@ -369,4 +370,5 @@ header {
     align-items: center; }
     .our-mentors .mentors-list .mentor img {
       width: 75%;
+      max-width: 20em;
       border-radius: 50%; }
