@@ -351,8 +351,22 @@ header {
 
 .how-works .how-works-list {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 15em; }
   .how-works .how-works-list .divider {
     border: 1px black solid; }
   .how-works .how-works-list .how-works-list-mentor {
     margin: 1em; }
+
+.our-mentors .mentors-list {
+  display: flex; }
+  @media screen and (max-width: 500px) {
+    .our-mentors .mentors-list {
+      flex-direction: column; } }
+  .our-mentors .mentors-list .mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .our-mentors .mentors-list .mentor img {
+      width: 75%;
+      border-radius: 50%; }

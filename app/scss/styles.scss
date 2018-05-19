@@ -76,6 +76,7 @@ header {
   .how-works-list {
     display: flex;
     justify-content: center;
+    height: 15em;
 
     .divider {
       border: 1px black solid;
@@ -83,6 +84,24 @@ header {
 
     .how-works-list-mentor {
       margin: 1em;
+    }
+  }
+}
+
+.our-mentors {
+  .mentors-list {
+    display: flex;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+    .mentor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 75%;
+        border-radius: 50%;
+      }
     }
   }
 }
