@@ -76,6 +76,8 @@ header {
 }
 
 .how-works {
+  display: grid;
+  grid-template-rows: auto 1fr;
   .how-works-list {
     display: flex;
     justify-content: center;
@@ -91,9 +93,12 @@ header {
 }
 
 .our-mentors {
+  display: grid;
+  grid-template-rows: auto 1fr;
   .mentors-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     @media screen and (max-width: 500px) {
       flex-direction: column;
     }
@@ -105,7 +110,7 @@ header {
       align-items: center;
       img {
         width: 75%;
-        max-width: 20em;
+        max-width: 14em;
         border-radius: 50%;
       }
     }
@@ -121,6 +126,10 @@ header {
     margin: 0 1em;
   }
   .areas-list {
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+
     list-style-type: none;
     display: flex;
     justify-content: center;
