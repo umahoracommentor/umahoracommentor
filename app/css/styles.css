@@ -303,7 +303,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 2fr 1.5fr auto 2fr 2fr; }
+  grid-template-rows: 1fr 2fr 1.5fr 2fr 2fr 2fr; }
 
 section, header {
   margin: 0 1em; }
@@ -387,33 +387,31 @@ header {
       align-items: flex-end;
       justify-content: flex-end;
       font-size: 1.5em; }
-      .areas .areas-list .area:hover {
-        background-blend-mode: normal; }
       .areas .areas-list .area h3 {
         margin: 0;
         padding: .3em;
         color: white; }
     .areas .areas-list #business {
       background: url(/images/business.jpg) center center no-repeat;
-      background-color: #4FB0AE;
-      background-size: cover;
-      background-blend-mode: hard-light; }
+      background-color: #2f6a68; }
       .areas .areas-list #business h3 {
         background-color: #4FB0AE; }
     .areas .areas-list #tech {
       background: url(/images/tech.jpg) center center no-repeat;
-      background-color: #5F7DBC;
-      background-size: cover;
-      background-blend-mode: hard-light; }
+      background-color: #354d80; }
       .areas .areas-list #tech h3 {
         background-color: #5F7DBC; }
     .areas .areas-list #ux {
       background: url(/images/ux.jpg) center center no-repeat;
-      background-color: #67D961;
-      background-size: cover;
-      background-blend-mode: hard-light; }
+      background-color: #30ab29; }
       .areas .areas-list #ux h3 {
         background-color: #67D961; }
+    .areas .areas-list #business, .areas .areas-list #tech, .areas .areas-list #ux {
+      background-size: cover;
+      background-blend-mode: hard-light;
+      transition: all 1s; }
+    .areas .areas-list #business:hover, .areas .areas-list #tech:hover, .areas .areas-list #ux:hover {
+      flex-grow: 1.8; }
 
 .us .links {
   display: flex;

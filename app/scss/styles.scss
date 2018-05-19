@@ -27,7 +27,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 2fr 1.5fr auto 2fr 2fr;
+  grid-template-rows: 1fr 2fr 1.5fr 2fr 2fr 2fr;
 
 }
 
@@ -127,9 +127,6 @@ header {
     -webkit-padding-start: 0;
     margin-bottom: 0;
     .area {
-      &:hover {
-        background-blend-mode: normal;
-      }
       flex-grow: 1;
       display: flex;
       align-items: flex-end;
@@ -143,30 +140,32 @@ header {
     }
     #business {
       background: url(/images/business.jpg) center center no-repeat;
-      background-color: $main;
-      background-size: cover;
-      background-blend-mode: hard-light;      
+      background-color: darken($main, 20);
       h3 {
         background-color: $main;
       }
     }
     #tech {
       background: url(/images/tech.jpg) center center no-repeat;
-      background-color: $secondary;
-      background-size: cover;
-      background-blend-mode: hard-light;
+      background-color: darken($secondary, 20);
       h3 {
         background-color: $secondary;
       }
     }
     #ux {
       background: url(/images/ux.jpg) center center no-repeat;
-      background-color: $tertiary;
-      background-size: cover;
-      background-blend-mode: hard-light;     
+      background-color: darken($tertiary, 20);
       h3 {
         background-color: $tertiary;
       }
+    }
+    #business, #tech, #ux {
+      background-size: cover;
+      background-blend-mode: hard-light;     
+      transition: all 1s;
+    }
+    #business:hover, #tech:hover, #ux:hover {
+      flex-grow: 1.8;
     }
   }
 }
