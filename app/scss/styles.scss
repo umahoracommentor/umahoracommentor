@@ -1,13 +1,50 @@
 @import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+$green: #4FB0AE;
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+section, header {
+  margin: 0 1em;
+}
 
 .navigation {
+  margin-bottom: 3em;
   .list {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
 
     .item {
+      color: black;
+      text-decoration: none;
       margin: .5em;
+    }
+  }
+}
+
+header {
+  height: 30vh;
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: .2em;
+      text-decoration: none;
+      background-color: $green;
+      padding: 1em .5em;
+      width: 230px;
+      font-size: 1.2em;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+      color: #edf7f7;
     }
   }
 }
