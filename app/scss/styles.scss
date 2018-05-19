@@ -43,6 +43,10 @@ section, header {
 header {
   margin-bottom: 2em;
 
+  h1 {
+    font-size: 2.2em;
+  }
+
   .links {
     display: flex;
     justify-content: flex-end;
