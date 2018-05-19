@@ -298,8 +298,7 @@ template {
 [hidden] {
   display: none; }
 
-html {
-  display: inline-block;
+html, body, main {
   width: 100%; }
 
 body {
@@ -314,7 +313,7 @@ section, header {
 
 .navigation {
   position: absolute;
-  background-color: rgba(79, 176, 174, 0.7);
+  background-color: rgba(95, 125, 188, 0.7);
   width: 100%; }
   .navigation .list {
     display: flex;
@@ -359,7 +358,6 @@ header {
       text-decoration: none;
       background-color: #4FB0AE;
       padding: 1em .5em;
-      width: 230px;
       font-size: 1.2em;
       border-radius: 4px;
       text-align: center;
@@ -464,7 +462,6 @@ header {
     text-decoration: none;
     background-color: #4FB0AE;
     padding: 1em .5em;
-    width: 230px;
     font-size: 1.2em;
     border-radius: 4px;
     text-align: center;

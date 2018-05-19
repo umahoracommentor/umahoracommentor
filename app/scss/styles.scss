@@ -13,7 +13,6 @@ $tertiary: #67D961;
   text-decoration: none;
   background-color: $main;
   padding: 1em .5em;
-  width: 230px;
   font-size: 1.2em;
   border-radius: 4px;
   text-align: center;
@@ -21,8 +20,7 @@ $tertiary: #67D961;
   color: #edf7f7;
 }
 
-html {
-  display: inline-block;
+html, body, main {
   width: 100%;
 }
 
@@ -41,7 +39,7 @@ section, header {
 
 .navigation {
   position: absolute;
-  background-color: rgba($main, .7);
+  background-color: rgba($secondary, .7);
   width: 100%;
   .list {
     display: flex;
