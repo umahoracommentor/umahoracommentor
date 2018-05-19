@@ -301,6 +301,11 @@ template {
 body {
   font-family: 'Karla', sans-serif; }
 
+main > hr {
+  height: 1px;
+  border: none;
+  color: #333; }
+
 section, header {
   margin: 0 1em; }
 
@@ -316,7 +321,7 @@ section, header {
       margin: .5em; }
 
 header {
-  height: 30vh; }
+  margin-bottom: 2em; }
   header .links {
     display: flex;
     justify-content: flex-end; }
@@ -334,3 +339,6 @@ header {
       text-align: center;
       font-weight: bold;
       color: #edf7f7; }
+
+.introduction {
+  height: 15em; }
