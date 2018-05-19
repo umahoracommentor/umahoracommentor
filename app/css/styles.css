@@ -298,7 +298,11 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  display: flex; }
+
 body {
+  flex-grow: 1;
   font-family: 'Karla', sans-serif; }
 
 main {
@@ -306,22 +310,25 @@ main {
   grid-template-rows: 1fr 2fr 1.5fr 2fr 2fr 2fr; }
 
 section, header {
-  margin: 0 1em; }
+  padding: 0 1em; }
 
 .navigation {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  background-color: #4FB0AE; }
   .navigation .list {
     display: flex;
     justify-content: flex-end;
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 1em; }
     .navigation .list .item {
       border-bottom: 2px solid rgba(0, 0, 0, 0);
       transition: border .5s;
-      color: black;
+      color: white;
       text-decoration: none;
       margin: .5em; }
       .navigation .list .item:hover {
-        border-bottom: 2px solid #4FB0AE; }
+        border-bottom: 2px solid white; }
 
 header {
   margin-bottom: 2em; }
@@ -345,17 +352,25 @@ header {
       font-weight: bold;
       color: #edf7f7; }
 
+.introduction {
+  background-color: #5F7DBC;
+  text-align: center;
+  color: white; }
+
 .how-works {
   display: grid;
   grid-template-rows: auto 1fr; }
   .how-works .how-works-list {
     display: flex;
     justify-content: space-around;
-    text-align: center; }
-    .how-works .how-works-list .divider {
-      border: 1px black solid; }
+    text-align: center;
+    color: white; }
     .how-works .how-works-list .how-works-list-mentor {
-      margin: 1em; }
+      flex-grow: 1; }
+    .how-works .how-works-list .how-works-list-mentor:first-child {
+      background-color: #4FB0AE; }
+    .how-works .how-works-list .how-works-list-mentor:last-child {
+      background-color: #67D961; }
 
 .our-mentors {
   display: grid;
@@ -378,7 +393,7 @@ header {
         border-radius: 50%; }
 
 .areas {
-  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-rows: auto 1fr; }
   .areas h1 {

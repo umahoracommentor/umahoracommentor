@@ -21,35 +21,42 @@ $tertiary: #67D961;
   color: #edf7f7;
 }
 
+html {
+  display: flex;
+}
+
 body {
+  flex-grow: 1;
   font-family: 'Karla', sans-serif;
 }
 
 main {
   display: grid;
   grid-template-rows: 1fr 2fr 1.5fr 2fr 2fr 2fr;
-
 }
 
 section, header {
-  margin: 0 1em;
+  padding: 0 1em;
 }
 
 .navigation {
   margin-bottom: 3em;
+  background-color: $main;
   .list {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
+    padding: 1em;
 
     .item {
       &:hover {
-        border-bottom: 2px solid $main;        
+        border-bottom: 2px solid white;        
       }
 
       border-bottom: 2px solid rgba(0, 0, 0, 0);        
       transition: border .5s;
-      color: black;
+      color: white;
       text-decoration: none;
       margin: .5em;
     }
@@ -73,6 +80,9 @@ header {
 }
 
 .introduction {
+  background-color: $secondary;
+  text-align: center;
+  color: white;
 }
 
 .how-works {
@@ -82,13 +92,18 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
-
-    .divider {
-      border: 1px black solid;
-    }
+    color: white;
 
     .how-works-list-mentor {
-      margin: 1em;
+      flex-grow: 1;
+    }
+
+    .how-works-list-mentor:first-child {
+      background-color: $main;
+    }
+
+    .how-works-list-mentor:last-child {
+      background-color: $tertiary;
     }
   }
 }
@@ -119,7 +134,7 @@ header {
 }
 
 .areas {
-  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-rows: auto 1fr;
 
