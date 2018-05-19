@@ -350,7 +350,8 @@ header {
   grid-template-rows: auto 1fr; }
   .how-works .how-works-list {
     display: flex;
-    justify-content: center; }
+    justify-content: space-around;
+    text-align: center; }
     .how-works .how-works-list .divider {
       border: 1px black solid; }
     .how-works .how-works-list .how-works-list-mentor {
@@ -423,20 +424,23 @@ header {
     .areas .areas-list #business:hover, .areas .areas-list #tech:hover, .areas .areas-list #ux:hover {
       flex-grow: 1.8; }
 
-.us .links {
-  display: flex;
-  justify-content: center; }
-  .us .links a {
+.us {
+  display: grid;
+  grid-template-rows: auto 4em; }
+  .us .links {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: .2em;
-    text-decoration: none;
-    background-color: #4FB0AE;
-    padding: 1em .5em;
-    width: 230px;
-    font-size: 1.2em;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-    color: #edf7f7; }
+    justify-content: center; }
+    .us .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: .2em;
+      text-decoration: none;
+      background-color: #4FB0AE;
+      padding: 1em .5em;
+      width: 230px;
+      font-size: 1.2em;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+      color: #edf7f7; }

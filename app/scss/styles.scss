@@ -80,7 +80,8 @@ header {
   grid-template-rows: auto 1fr;
   .how-works-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
 
     .divider {
       border: 1px black solid;
@@ -180,6 +181,8 @@ header {
 }
 
 .us {
+  display: grid;
+  grid-template-rows: auto 4em;
   .links {
     display: flex;
     justify-content: center;
