@@ -382,3 +382,21 @@ header {
   .areas .areas-list .area {
     flex-grow: 1;
     text-align: center; }
+
+.us .links {
+  display: flex;
+  justify-content: center; }
+  .us .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .2em;
+    text-decoration: none;
+    background-color: #4FB0AE;
+    padding: 1em .5em;
+    width: 230px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #edf7f7; }

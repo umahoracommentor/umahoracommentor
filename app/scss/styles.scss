@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
 $main: #4FB0AE;
+$secondary: #5F7DBC;
+$tertiary: #67D961;
+
+@mixin btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .2em;
+  text-decoration: none;
+  background-color: $main;
+  padding: 1em .5em;
+  width: 230px;
+  font-size: 1.2em;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #edf7f7;
+}
 
 body {
   font-family: 'Karla', sans-serif;
@@ -51,19 +69,7 @@ header {
     display: flex;
     justify-content: flex-end;
     a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: .2em;
-      text-decoration: none;
-      background-color: $main;
-      padding: 1em .5em;
-      width: 230px;
-      font-size: 1.2em;
-      border-radius: 4px;
-      text-align: center;
-      font-weight: bold;
-      color: #edf7f7;
+      @include btn;
     }
   }
 }
@@ -119,6 +125,16 @@ header {
     .area {
       flex-grow: 1;
       text-align: center;
+    }
+  }
+}
+
+.us {
+  .links {
+    display: flex;
+    justify-content: center;
+    a {
+      @include btn;
     }
   }
 }
