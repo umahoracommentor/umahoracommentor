@@ -383,16 +383,37 @@ header {
     margin-bottom: 0; }
     .areas .areas-list .area {
       flex-grow: 1;
-      text-align: center; }
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      font-size: 1.5em; }
+      .areas .areas-list .area:hover {
+        background-blend-mode: normal; }
+      .areas .areas-list .area h3 {
+        margin: 0;
+        padding: .3em;
+        color: white; }
     .areas .areas-list #business {
       background: url(/images/business.jpg) center center no-repeat;
-      background-size: cover; }
+      background-color: #4FB0AE;
+      background-size: cover;
+      background-blend-mode: hard-light; }
+      .areas .areas-list #business h3 {
+        background-color: #4FB0AE; }
     .areas .areas-list #tech {
       background: url(/images/tech.jpg) center center no-repeat;
-      background-size: cover; }
+      background-color: #5F7DBC;
+      background-size: cover;
+      background-blend-mode: hard-light; }
+      .areas .areas-list #tech h3 {
+        background-color: #5F7DBC; }
     .areas .areas-list #ux {
       background: url(/images/ux.jpg) center center no-repeat;
-      background-size: cover; }
+      background-color: #67D961;
+      background-size: cover;
+      background-blend-mode: hard-light; }
+      .areas .areas-list #ux h3 {
+        background-color: #67D961; }
 
 .us .links {
   display: flex;
