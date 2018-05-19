@@ -10,6 +10,9 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var ghPages = require('gulp-gh-pages');
+var filter = require('gulp-filter');
+var rev = require('gulp-rev');
+var revReplace = require('gulp-rev-replace');
 
 // Development Tasks 
 // -----------------
@@ -46,11 +49,16 @@ gulp.task('watch', function() {
 
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function() {
+  var indexHtmlFilter = filter(['**/*', '!**/index.html'], { restore: true });
 
   return gulp.src('app/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
+    .pipe(indexHtmlFilter)
+    .pipe(rev())
+    .pipe(indexHtmlFilter.restore)
+    .pipe(revReplace())
     .pipe(gulp.dest('dist'));
 });
 
