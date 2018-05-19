@@ -61,3 +61,18 @@ header {
 .introduction {
   height: 15em;
 }
+
+.how-works {
+  .how-works-list {
+    display: flex;
+    justify-content: center;
+
+    .divider {
+      border: 1px black solid;
+    }
+
+    .how-works-list-mentor {
+      margin: 1em;
+    }
+  }
+}

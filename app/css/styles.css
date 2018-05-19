@@ -342,3 +342,11 @@ header {
 
 .introduction {
   height: 15em; }
+
+.how-works .how-works-list {
+  display: flex;
+  justify-content: center; }
+  .how-works .how-works-list .divider {
+    border: 1px black solid; }
+  .how-works .how-works-list .how-works-list-mentor {
+    margin: 1em; }
