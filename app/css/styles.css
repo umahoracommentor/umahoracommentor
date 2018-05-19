@@ -301,10 +301,9 @@ template {
 body {
   font-family: 'Karla', sans-serif; }
 
-main > hr {
-  height: 1px;
-  border: none;
-  color: #333; }
+main {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1.5fr auto 2fr 2fr; }
 
 section, header {
   margin: 0 1em; }
@@ -346,13 +345,9 @@ header {
       font-weight: bold;
       color: #edf7f7; }
 
-.introduction {
-  height: 15em; }
-
 .how-works .how-works-list {
   display: flex;
-  justify-content: center;
-  height: 15em; }
+  justify-content: center; }
   .how-works .how-works-list .divider {
     border: 1px black solid; }
   .how-works .how-works-list .how-works-list-mentor {
@@ -374,14 +369,30 @@ header {
       max-width: 20em;
       border-radius: 50%; }
 
-.areas .areas-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  -webkit-padding-start: 0; }
-  .areas .areas-list .area {
-    flex-grow: 1;
-    text-align: center; }
+.areas {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr; }
+  .areas h1 {
+    margin: 0 1em; }
+  .areas .areas-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    -webkit-padding-start: 0;
+    margin-bottom: 0; }
+    .areas .areas-list .area {
+      flex-grow: 1;
+      text-align: center; }
+    .areas .areas-list #business {
+      background: url(/images/business.jpg) center center no-repeat;
+      background-size: cover; }
+    .areas .areas-list #tech {
+      background: url(/images/tech.jpg) center center no-repeat;
+      background-size: cover; }
+    .areas .areas-list #ux {
+      background: url(/images/ux.jpg) center center no-repeat;
+      background-size: cover; }
 
 .us .links {
   display: flex;
