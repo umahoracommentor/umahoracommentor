@@ -98,6 +98,52 @@ header {
   background-color: $secondary;
   text-align: center;
   color: white;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  
+  p {
+    margin: 1em auto;
+    max-width: 30em;
+  }
+
+  .intro-icons-list {
+
+    -webkit-padding-start: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+
+    .intro-icons-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      box-sizing: border-box;
+      background-color: lighten($main, 80);
+      height: 90%;
+      width: 20%;
+      padding: 1em;
+
+      img {
+        height: 7em;
+        width: 8em;
+      }
+      p {
+        width: 8em;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      
+      .intro-icons-item {
+        width: 90%;
+        margin: 1em;
+      }
+    }
+
+  }
 }
 
 .how-works {
@@ -130,7 +176,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
       flex-direction: column;
     }
 
@@ -157,7 +203,7 @@ header {
     margin: 0 1em;
   }
   .areas-list {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
       flex-direction: column;
     }
 
@@ -228,7 +274,7 @@ header {
     justify-content: space-around;
     -webkit-padding-start: 0;
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 900px) {
       flex-direction: column;
     }
     .us-item {
