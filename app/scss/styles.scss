@@ -162,6 +162,7 @@ header {
 
     .how-works-list-mentor {
       flex-grow: 1;
+      width: 50%;
     }
 
     .how-works-list-mentor:first-child {
@@ -181,6 +182,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 2em;
+
     @media screen and (max-width: 900px) {
       flex-direction: column;
     }
@@ -193,7 +196,9 @@ header {
       justify-content: flex-end;
       border-radius: 50%;
       max-width: 14em;
+      width: 14em;
       height: 14em;
+      margin: 2em;
 
       h3 {
         width: fit-content;
@@ -280,14 +285,6 @@ header {
   }
 }
 
-.links {
-  display: flex;
-  justify-content: space-around;
-  a {
-    @include btn;
-  }
-}
-
 .us {
   display: grid;
   grid-template-rows: 4em auto 4em;
@@ -317,4 +314,20 @@ header {
       }
     }
   }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  a {
+    @include btn;
+    margin: 1em;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: .5em;
+  color: white;
+  background-color: $secondary;
 }

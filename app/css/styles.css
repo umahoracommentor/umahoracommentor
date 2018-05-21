@@ -413,7 +413,8 @@ header {
     text-align: center;
     color: white; }
     .how-works .how-works-list .how-works-list-mentor {
-      flex-grow: 1; }
+      flex-grow: 1;
+      width: 50%; }
     .how-works .how-works-list .how-works-list-mentor:first-child {
       background-color: #4FB0AE; }
     .how-works .how-works-list .how-works-list-mentor:last-child {
@@ -425,7 +426,8 @@ header {
   .our-mentors .mentors-list {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 2em; }
     @media screen and (max-width: 900px) {
       .our-mentors .mentors-list {
         flex-direction: column; } }
@@ -437,7 +439,9 @@ header {
       justify-content: flex-end;
       border-radius: 50%;
       max-width: 14em;
-      height: 14em; }
+      width: 14em;
+      height: 14em;
+      margin: 2em; }
       .our-mentors .mentors-list .mentor h3 {
         width: fit-content;
         background-color: rgba(0, 0, 0, 0.7);
@@ -497,23 +501,6 @@ header {
     .areas .areas-list #business:hover, .areas .areas-list #tech:hover, .areas .areas-list #ux:hover {
       flex-grow: 1.8; }
 
-.links {
-  display: flex;
-  justify-content: space-around; }
-  .links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: .2em;
-    text-decoration: none;
-    background-color: rgba(120, 99, 192, 0.7);
-    padding: 1em .5em;
-    font-size: 1.2em;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-    color: #edf7f7; }
-
 .us {
   display: grid;
   grid-template-rows: 4em auto 4em; }
@@ -537,3 +524,27 @@ header {
       .us .us-list .us-item img {
         max-width: 14em;
         border-radius: 50%; }
+
+.links {
+  display: flex;
+  justify-content: center; }
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .2em;
+    text-decoration: none;
+    background-color: rgba(120, 99, 192, 0.7);
+    padding: 1em .5em;
+    font-size: 1.2em;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #edf7f7;
+    margin: 1em; }
+
+footer {
+  text-align: center;
+  padding: .5em;
+  color: white;
+  background-color: #5F7DBC; }
