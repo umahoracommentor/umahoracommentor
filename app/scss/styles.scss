@@ -1,5 +1,7 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Karla');
+// @import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 $main: #4FB0AE;
 $secondary: #5F7DBC;
@@ -11,7 +13,7 @@ $tertiary: #7863C0;
   justify-content: center;
   margin: .2em;
   text-decoration: none;
-  background-color: $main;
+  background-color: rgba($tertiary, 0.7);
   padding: 1em .5em;
   font-size: 1.2em;
   border-radius: 4px;
@@ -25,7 +27,7 @@ html, body, main {
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -248,21 +250,21 @@ header {
     }
     #business {
       background: url(/images/business.jpg) center center no-repeat;
-      background-color: darken($main, 20);
+      // background-color: darken($main, 20);
       h3 {
         background-color: $main;
       }
     }
     #tech {
       background: url(/images/tech.jpg) center center no-repeat;
-      background-color: darken($secondary, 20);
+      // background-color: darken($secondary, 20);
       h3 {
         background-color: $secondary;
       }
     }
     #ux {
       background: url(/images/ux.jpg) center center no-repeat;
-      background-color: darken($tertiary, 20);
+      // background-color: darken($tertiary, 20);
       h3 {
         background-color: $tertiary;
       }

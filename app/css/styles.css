@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Karla");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html {
   line-height: 1.15;
   /* 1 */
@@ -302,7 +302,7 @@ html, body, main {
   width: 100%; }
 
 body {
-  font-family: 'Karla', sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 main {
   display: grid;
@@ -357,7 +357,7 @@ header {
       justify-content: center;
       margin: .2em;
       text-decoration: none;
-      background-color: #4FB0AE;
+      background-color: rgba(120, 99, 192, 0.7);
       padding: 1em .5em;
       font-size: 1.2em;
       border-radius: 4px;
@@ -479,18 +479,15 @@ header {
         padding: .3em;
         color: white; }
     .areas .areas-list #business {
-      background: url(/images/business.jpg) center center no-repeat;
-      background-color: #2f6a68; }
+      background: url(/images/business.jpg) center center no-repeat; }
       .areas .areas-list #business h3 {
         background-color: #4FB0AE; }
     .areas .areas-list #tech {
-      background: url(/images/tech.jpg) center center no-repeat;
-      background-color: #354d80; }
+      background: url(/images/tech.jpg) center center no-repeat; }
       .areas .areas-list #tech h3 {
         background-color: #5F7DBC; }
     .areas .areas-list #ux {
-      background: url(/images/ux.jpg) center center no-repeat;
-      background-color: #483687; }
+      background: url(/images/ux.jpg) center center no-repeat; }
       .areas .areas-list #ux h3 {
         background-color: #7863C0; }
     .areas .areas-list #business, .areas .areas-list #tech, .areas .areas-list #ux {
@@ -509,7 +506,7 @@ header {
     justify-content: center;
     margin: .2em;
     text-decoration: none;
-    background-color: #4FB0AE;
+    background-color: rgba(120, 99, 192, 0.7);
     padding: 1em .5em;
     font-size: 1.2em;
     border-radius: 4px;
