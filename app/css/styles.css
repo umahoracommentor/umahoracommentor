@@ -352,6 +352,8 @@ header {
     header .hgroup h1, header .hgroup h2 {
       margin: 0;
       padding: .2em;
+      width: intrinsic;
+      width: -moz-max-content;
       width: fit-content;
       background-color: rgba(0, 0, 0, 0.7); }
   header .links {
@@ -381,6 +383,8 @@ header {
   grid-template-rows: auto auto 1fr; }
   .introduction h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
@@ -424,6 +428,8 @@ header {
   background-color: #7863C0; }
   .how-works h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
@@ -442,6 +448,8 @@ header {
   grid-template-rows: auto 1fr; }
   .our-mentors h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
@@ -493,6 +501,8 @@ header {
   background-color: #5F7DBC; }
   .areas h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
@@ -561,6 +571,8 @@ header {
   color: white; }
   .us h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
@@ -595,6 +607,8 @@ header {
   background-size: cover; }
   .participar h1 {
     color: white;
+    width: intrinsic;
+    width: -moz-max-content;
     width: fit-content;
     margin: 1em auto;
     padding: .5em;
