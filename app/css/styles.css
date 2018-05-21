@@ -341,7 +341,8 @@ header {
   background-blend-mode: luminosity;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 1em; }
   header .hgroup {
     padding: 4em .5em; }
     header .hgroup h1 {
@@ -369,6 +370,8 @@ header {
       color: #edf7f7; }
 
 .introduction {
+  padding-top: 0.67em;
+  margin-top: 0;
   background-color: #5F7DBC;
   text-align: center;
   color: white;
@@ -467,6 +470,7 @@ header {
   .areas h1 {
     margin: 0 1em; }
   .areas .areas-list {
+    min-height: 28em;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -506,7 +510,7 @@ header {
 
 .us {
   display: grid;
-  grid-template-rows: 4em auto 4em; }
+  grid-template-rows: 4em auto; }
   .us .us-list {
     list-style: none;
     display: flex;
