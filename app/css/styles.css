@@ -384,7 +384,7 @@ header {
     margin: 1em auto;
     max-width: 30em; }
   .introduction .intro-icons-list {
-    -webkit-padding-start: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -483,7 +483,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    -webkit-padding-start: 0;
+    padding: 0;
     margin-bottom: 0; }
     @media screen and (max-width: 900px) {
       .areas .areas-list {
@@ -524,7 +524,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    -webkit-padding-start: 0; }
+    padding: 0; }
     @media screen and (max-width: 900px) {
       .us .us-list {
         flex-direction: column; } }
@@ -559,6 +559,10 @@ header {
     font-weight: bold;
     color: #edf7f7;
     margin: 1em; }
+
+@media screen and (max-width: 900px) {
+  .participar h1, .us h1, .area h1, .our-mentors h1, .how-works h1 {
+    text-align: center; } }
 
 footer {
   text-align: center;
