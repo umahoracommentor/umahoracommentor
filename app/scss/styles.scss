@@ -33,6 +33,9 @@ body {
 main {
   display: grid;
   grid-template-rows: 2fr 3fr 2.5fr 2fr 2.5fr 2fr;
+  @media screen and (max-width: 900px) {
+    grid-template-rows: 1fr 2.5fr 1fr 1.5fr 1.5fr 1fr;
+  }
 }
 
 section, header {
