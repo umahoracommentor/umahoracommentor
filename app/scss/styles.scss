@@ -13,7 +13,7 @@ $tertiary: #7863C0;
   justify-content: center;
   margin: .2em;
   text-decoration: none;
-  background-color: rgba($tertiary, 0.7);
+  background-color: rgba($main, 0.7);
   padding: 1em .5em;
   font-size: 1.2em;
   border-radius: 4px;
@@ -25,7 +25,7 @@ $tertiary: #7863C0;
 @mixin heading {
   color: white;
   width: fit-content;
-  margin: 0.67em auto;
+  margin: 1em auto;
   padding: .5em;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -48,6 +48,7 @@ main {
 
 section, header {
   padding: 0 1em;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .navigation {
@@ -202,6 +203,7 @@ header {
   grid-template-rows: auto 1fr;
 
   h1 {
+    @include heading();
   }
 
   .mentors-list {
@@ -320,7 +322,7 @@ header {
 }
 
 .us {
-  background-color: $tertiary;
+  background-color: $secondary;
   color: white;
 
   h1 {

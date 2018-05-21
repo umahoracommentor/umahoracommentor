@@ -312,7 +312,8 @@ main {
       grid-template-rows: 1fr 2.5fr 1fr 1.5fr 1.5fr 1fr; } }
 
 section, header {
-  padding: 0 1em; }
+  padding: 0 1em;
+  border: 1px solid rgba(0, 0, 0, 0); }
 
 .navigation {
   position: absolute;
@@ -362,7 +363,7 @@ header {
       justify-content: center;
       margin: .2em;
       text-decoration: none;
-      background-color: rgba(120, 99, 192, 0.7);
+      background-color: rgba(79, 176, 174, 0.7);
       padding: 1em .5em;
       font-size: 1.2em;
       border-radius: 4px;
@@ -381,7 +382,7 @@ header {
   .introduction h1 {
     color: white;
     width: fit-content;
-    margin: 0.67em auto;
+    margin: 1em auto;
     padding: .5em;
     background-color: rgba(0, 0, 0, 0.7); }
   .introduction p {
@@ -424,7 +425,7 @@ header {
   .how-works h1 {
     color: white;
     width: fit-content;
-    margin: 0.67em auto;
+    margin: 1em auto;
     padding: .5em;
     background-color: rgba(0, 0, 0, 0.7); }
   .how-works .how-works-list {
@@ -439,6 +440,12 @@ header {
 .our-mentors {
   display: grid;
   grid-template-rows: auto 1fr; }
+  .our-mentors h1 {
+    color: white;
+    width: fit-content;
+    margin: 1em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   .our-mentors .mentors-list {
     display: flex;
     justify-content: space-around;
@@ -487,7 +494,7 @@ header {
   .areas h1 {
     color: white;
     width: fit-content;
-    margin: 0.67em auto;
+    margin: 1em auto;
     padding: .5em;
     background-color: rgba(0, 0, 0, 0.7); }
   .areas .areas-list {
@@ -530,12 +537,12 @@ header {
       flex-grow: 1.8; }
 
 .us {
-  background-color: #7863C0;
+  background-color: #5F7DBC;
   color: white; }
   .us h1 {
     color: white;
     width: fit-content;
-    margin: 0.67em auto;
+    margin: 1em auto;
     padding: .5em;
     background-color: rgba(0, 0, 0, 0.7); }
   .us .us-list {
@@ -569,7 +576,7 @@ header {
   .participar h1 {
     color: white;
     width: fit-content;
-    margin: 0.67em auto;
+    margin: 1em auto;
     padding: .5em;
     background-color: rgba(0, 0, 0, 0.7); }
   .participar .links a {
@@ -584,7 +591,7 @@ header {
     justify-content: center;
     margin: .2em;
     text-decoration: none;
-    background-color: rgba(120, 99, 192, 0.7);
+    background-color: rgba(79, 176, 174, 0.7);
     padding: 1em .5em;
     font-size: 1.2em;
     border-radius: 4px;
