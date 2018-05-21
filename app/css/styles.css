@@ -332,6 +332,7 @@ section, header {
 
 header {
   background: gray url(/images/mentoring.jpg) center center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: #ffffff;
   background-blend-mode: luminosity;
@@ -403,6 +404,7 @@ header {
           margin: 1em; } }
 
 .how-works {
+  padding: 0;
   display: grid;
   grid-template-rows: auto 1fr; }
   .how-works .how-works-list {
@@ -415,14 +417,14 @@ header {
     .how-works .how-works-list .how-works-list-mentor:first-child {
       background-color: #4FB0AE; }
     .how-works .how-works-list .how-works-list-mentor:last-child {
-      background-color: #67D961; }
+      background-color: #7863C0; }
 
 .our-mentors {
   display: grid;
   grid-template-rows: auto 1fr; }
   .our-mentors .mentors-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
     @media screen and (max-width: 900px) {
       .our-mentors .mentors-list {
@@ -431,11 +433,25 @@ header {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .our-mentors .mentors-list .mentor img {
-        width: 75%;
-        max-width: 14em;
-        border-radius: 50%; }
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-radius: 50%;
+      max-width: 14em;
+      height: 14em; }
+      .our-mentors .mentors-list .mentor h3 {
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: .2em .5em;
+        color: white; }
+      .our-mentors .mentors-list .mentor:nth-child(1) {
+        background: url(/images/mentor2.jpg) center center no-repeat;
+        background-size: cover; }
+      .our-mentors .mentors-list .mentor:nth-child(2) {
+        background: url(/images/mentor1.jpeg) center center no-repeat;
+        background-size: cover; }
+      .our-mentors .mentors-list .mentor:nth-child(3) {
+        background: url(/images/mentor3.jpeg) center center no-repeat;
+        background-size: cover; }
 
 .areas {
   padding: 0;
@@ -474,9 +490,9 @@ header {
         background-color: #5F7DBC; }
     .areas .areas-list #ux {
       background: url(/images/ux.jpg) center center no-repeat;
-      background-color: #30ab29; }
+      background-color: #483687; }
       .areas .areas-list #ux h3 {
-        background-color: #67D961; }
+        background-color: #7863C0; }
     .areas .areas-list #business, .areas .areas-list #tech, .areas .areas-list #ux {
       background-size: cover;
       background-blend-mode: hard-light;

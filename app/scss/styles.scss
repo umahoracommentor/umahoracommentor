@@ -3,7 +3,7 @@
 
 $main: #4FB0AE;
 $secondary: #5F7DBC;
-$tertiary: #67D961;
+$tertiary: #7863C0;
 
 @mixin btn {
   display: flex;
@@ -148,8 +148,10 @@ header {
 }
 
 .how-works {
+  padding: 0;
   display: grid;
   grid-template-rows: auto 1fr;
+
   .how-works-list {
     display: flex;
     justify-content: space-around;
@@ -175,7 +177,7 @@ header {
   grid-template-rows: auto 1fr;
   .mentors-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     @media screen and (max-width: 900px) {
       flex-direction: column;
@@ -185,11 +187,30 @@ header {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      img {
-        width: 75%;
-        max-width: 14em;
-        border-radius: 50%;
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-radius: 50%;
+      max-width: 14em;
+      height: 14em;
+
+      h3 {
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: .2em .5em;
+        color: white;
+      }
+
+      &:nth-child(1) {
+        background: url(/images/mentor2.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background: url(/images/mentor1.jpeg) center center no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(3) {
+        background: url(/images/mentor3.jpeg) center center no-repeat;
+        background-size: cover;
       }
     }
   }
