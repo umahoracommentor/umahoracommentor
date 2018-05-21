@@ -380,6 +380,12 @@ header {
   color: white;
   display: grid;
   grid-template-rows: auto auto 1fr; }
+  .introduction h1 {
+    color: white;
+    width: fit-content;
+    margin: 0.67em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   .introduction p {
     margin: 1em auto;
     max-width: 30em; }
@@ -416,6 +422,12 @@ header {
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr; }
+  .how-works h1 {
+    color: white;
+    width: fit-content;
+    margin: 0.67em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   .how-works .how-works-list {
     display: flex;
     justify-content: space-around;
@@ -475,9 +487,14 @@ header {
 .areas {
   padding: 0;
   display: grid;
-  grid-template-rows: auto 1fr; }
+  grid-template-rows: auto 1fr;
+  background-color: #5F7DBC; }
   .areas h1 {
-    margin: 0 1em; }
+    color: white;
+    width: fit-content;
+    margin: 0.67em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   .areas .areas-list {
     min-height: 28em;
     list-style-type: none;

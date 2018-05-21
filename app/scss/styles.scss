@@ -22,6 +22,14 @@ $tertiary: #7863C0;
   color: #edf7f7;
 }
 
+@mixin heading {
+  color: white;
+  width: fit-content;
+  margin: 0.67em auto;
+  padding: .5em;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 html, body, main {
   width: 100%;
 }
@@ -112,6 +120,10 @@ header {
   color: white;
   display: grid;
   grid-template-rows: auto auto 1fr;
+
+  h1 {
+    @include heading();
+  }
   
   p {
     margin: 1em auto;
@@ -163,6 +175,10 @@ header {
   display: grid;
   grid-template-rows: auto 1fr;
 
+  h1 {
+    @include heading();
+  }
+
   .how-works-list {
     display: flex;
     justify-content: space-around;
@@ -187,6 +203,9 @@ header {
 .our-mentors {
   display: grid;
   grid-template-rows: auto 1fr;
+
+  h1 {
+  }
 
   .mentors-list {
     display: flex;
@@ -243,9 +262,10 @@ header {
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr;
+  background-color: $secondary;
 
   h1 {
-    margin: 0 1em;
+    @include heading();
   }
   .areas-list {
     @media screen and (max-width: 900px) {
