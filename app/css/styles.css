@@ -334,12 +334,10 @@ section, header {
         border-bottom: 2px solid white; }
 
 header {
-  background-color: gray;
-  background-image: url(/images/mentoring.jpg);
+  background-image: url(/images/mentoring.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-blend-mode: luminosity;
   background-size: cover;
   color: #ffffff;
   display: flex;
@@ -421,7 +419,8 @@ header {
 .how-works {
   padding: 0;
   display: grid;
-  grid-template-rows: auto 1fr; }
+  grid-template-rows: auto 1fr;
+  background-color: #7863C0; }
   .how-works h1 {
     color: white;
     width: fit-content;
@@ -436,10 +435,6 @@ header {
     .how-works .how-works-list .how-works-list-mentor {
       flex-grow: 1;
       width: 50%; }
-    .how-works .how-works-list .how-works-list-mentor:first-child {
-      background-color: #4FB0AE; }
-    .how-works .how-works-list .how-works-list-mentor:last-child {
-      background-color: #7863C0; }
 
 .our-mentors {
   display: grid;
@@ -535,8 +530,14 @@ header {
       flex-grow: 1.8; }
 
 .us {
-  display: grid;
-  grid-template-rows: 4em auto; }
+  background-color: #7863C0;
+  color: white; }
+  .us h1 {
+    color: white;
+    width: fit-content;
+    margin: 0.67em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   .us .us-list {
     list-style: none;
     display: flex;
@@ -558,6 +559,21 @@ header {
         max-width: 14em;
         height: 14em;
         border-radius: 50%; }
+
+.participar {
+  background-image: url(/images/mentoring.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .participar h1 {
+    color: white;
+    width: fit-content;
+    margin: 0.67em auto;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .participar .links a {
+    background-color: rgba(79, 176, 174, 0.7); }
 
 .links {
   display: flex;

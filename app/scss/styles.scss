@@ -76,12 +76,10 @@ section, header {
 }
 
 header {
-  background-color: gray;
-  background-image: url(/images/mentoring.jpg);
+  background-image: url(/images/mentoring.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-blend-mode: luminosity;
   background-size: cover;
   color: #ffffff;
   display: flex;
@@ -174,6 +172,7 @@ header {
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr;
+  background-color: $tertiary;
 
   h1 {
     @include heading();
@@ -191,11 +190,9 @@ header {
     }
 
     .how-works-list-mentor:first-child {
-      background-color: $main;
     }
 
     .how-works-list-mentor:last-child {
-      background-color: $tertiary;
     }
   }
 }
@@ -323,8 +320,12 @@ header {
 }
 
 .us {
-  display: grid;
-  grid-template-rows: 4em auto;
+  background-color: $tertiary;
+  color: white;
+
+  h1 {
+    @include heading();
+  }
   
   .us-list {
     list-style: none;
@@ -351,6 +352,22 @@ header {
         border-radius: 50%;
       }
     }
+  }
+}
+
+.participar {
+  background-image: url(/images/mentoring.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h1 {
+    @include heading();
+  }
+
+  .links a {
+    background-color: rgba($main, 0.7);
   }
 }
 
