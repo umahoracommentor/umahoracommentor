@@ -13,6 +13,7 @@ var ghPages = require('gulp-gh-pages');
 var filter = require('gulp-filter');
 var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Development Tasks 
 // -----------------
@@ -31,6 +32,10 @@ gulp.task('sass', function() {
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }).on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('app/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
@@ -66,9 +71,7 @@ gulp.task('useref', function() {
 gulp.task('images', function() {
   return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
-    .pipe(cache(imagemin({
-      interlaced: true,
-    })))
+    .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/images'))
 });
 

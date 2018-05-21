@@ -25,7 +25,6 @@ $tertiary: #7863C0;
 @mixin heading {
   color: white;
   width: intrinsic;
-  width: -moz-max-content;
   width: fit-content;
   margin: 1em auto;
   padding: .5em;
@@ -34,11 +33,11 @@ $tertiary: #7863C0;
 
 html, body, main {
   width: 100%;
-  height:100%;
-  min-height:100%;
+  min-height: 100%;
 }
 
 body {
+  height: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -92,7 +91,9 @@ header {
   justify-content: space-around;
   padding: 1em;
 
-  @media (max-width: @iphone-screen) { // fix image =D
+  @media only screen 
+    and (device-width: 414px) 
+    and (device-height: 736px) { // fix image =D
       background-attachment: scroll;
   }
 
@@ -106,7 +107,6 @@ header {
       margin: 0;
       padding: .2em;
       width: intrinsic;
-      width: -moz-max-content;
       width: fit-content;
       background-color: hsla(0, 0%, 0%, .7);
     }
@@ -397,8 +397,10 @@ header {
   background-attachment: fixed;
   background-size: cover;
 
-  @media (max-width: @iphone-screen) {
-      background-attachment: scroll;
+  @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) {
+    background-attachment: scroll;
   }
 
   h1 {
