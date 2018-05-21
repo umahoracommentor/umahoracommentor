@@ -334,11 +334,14 @@ section, header {
         border-bottom: 2px solid white; }
 
 header {
-  background: gray url(/images/mentoring.jpg) center center no-repeat;
+  background-color: gray;
+  background-image: url(/images/mentoring.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
+  background-blend-mode: luminosity;
   background-size: cover;
   color: #ffffff;
-  background-blend-mode: luminosity;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -454,13 +457,19 @@ header {
         padding: .2em .5em;
         color: white; }
       .our-mentors .mentors-list .mentor:nth-child(1) {
-        background: url(/images/mentor2.jpg) center center no-repeat;
+        background: url(/images/mentor2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover; }
       .our-mentors .mentors-list .mentor:nth-child(2) {
-        background: url(/images/mentor1.jpeg) center center no-repeat;
+        background: url(/images/mentor1.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover; }
       .our-mentors .mentors-list .mentor:nth-child(3) {
-        background: url(/images/mentor3.jpeg) center center no-repeat;
+        background: url(/images/mentor3.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover; }
 
 .areas {
@@ -530,6 +539,7 @@ header {
         align-items: center; }
       .us .us-list .us-item img {
         max-width: 14em;
+        height: 14em;
         border-radius: 50%; }
 
 .links {

@@ -68,11 +68,14 @@ section, header {
 }
 
 header {
-  background: gray url(/images/mentoring.jpg) center center no-repeat;
+  background-color: gray;
+  background-image: url(/images/mentoring.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
+  background-blend-mode: luminosity;
   background-size: cover;
   color: #ffffff;
-  background-blend-mode: luminosity;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -184,6 +187,7 @@ header {
 .our-mentors {
   display: grid;
   grid-template-rows: auto 1fr;
+
   .mentors-list {
     display: flex;
     justify-content: space-around;
@@ -214,15 +218,21 @@ header {
       }
 
       &:nth-child(1) {
-        background: url(/images/mentor2.jpg) center center no-repeat;
+        background: url(/images/mentor2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
       }
       &:nth-child(2) {
-        background: url(/images/mentor1.jpeg) center center no-repeat;
+        background: url(/images/mentor1.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
       }
       &:nth-child(3) {
-        background: url(/images/mentor3.jpeg) center center no-repeat;
+        background: url(/images/mentor3.jpeg);
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
       }
     }
@@ -317,6 +327,7 @@ header {
       }
       img {
         max-width: 14em;
+        height: 14em;
         border-radius: 50%;
       }
     }
