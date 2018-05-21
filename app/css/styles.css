@@ -507,7 +507,10 @@ header {
     @media screen and (max-width: 900px) {
       .areas .areas-list {
         flex-direction: column; } }
+    .areas .areas-list:hover {
+      filter: grayscale(0.5); }
     .areas .areas-list .area {
+      position: relative;
       flex-grow: 1;
       display: flex;
       align-items: flex-end;
@@ -517,6 +520,21 @@ header {
         margin: 0;
         padding: .3em;
         color: white; }
+      .areas .areas-list .area .area-description {
+        user-select: none;
+        transition: all .4s;
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        padding: 1em;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8); }
+      .areas .areas-list .area:hover .area-description {
+        opacity: 1; }
     .areas .areas-list #business {
       background: url(/images/business.jpg) center center no-repeat; }
       .areas .areas-list #business h3 {
@@ -532,7 +550,7 @@ header {
     .areas .areas-list #business, .areas .areas-list #tech, .areas .areas-list #ux {
       background-size: cover;
       background-blend-mode: hard-light;
-      transition: all 1s; }
+      transition: all .4s; }
     .areas .areas-list #business:hover, .areas .areas-list #tech:hover, .areas .areas-list #ux:hover {
       flex-grow: 1.8; }
 
