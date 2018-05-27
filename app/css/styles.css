@@ -315,7 +315,7 @@ main {
   grid-template-rows: 2fr 3fr 2.5fr 2fr 2.5fr 2fr; }
   @media screen and (max-width: 900px) {
     main {
-      grid-template-rows: 1fr 2.5fr 1fr 1.5fr 1.5fr 1fr; } }
+      grid-template-rows: 1fr 2fr 1fr 1.5fr 1.5fr 1fr; } }
 
 section, header {
   padding: 0 1em; }
@@ -422,8 +422,7 @@ header {
     background-color: rgba(0, 0, 0, 0.7); }
   .introduction .introduction-text {
     max-width: 40em;
-    margin: 0 auto;
-    color: #080b12; }
+    margin: 0 auto; }
   .introduction .intro-icons-list {
     padding: 0;
     list-style: none;
@@ -435,7 +434,7 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: black; }
+    font-size: .9em; }
     .introduction .intro-icons-list .intro-icons-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -450,13 +449,11 @@ header {
       border-radius: 10px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      background-color: #4461a2;
-      height: 90%;
+      background-color: #4767ab;
       width: 20%;
       padding: 1.5em;
       max-width: 16em;
-      color: #05060b;
-      border: 3px solid #172036; }
+      border: 3px solid #7c94c8; }
       .introduction .intro-icons-list .intro-icons-item img {
         height: 7em;
         width: 8em; }
@@ -476,7 +473,7 @@ header {
   padding: 0;
   display: grid;
   grid-template-rows: auto 1fr;
-  background-color: #7863C0; }
+  background-color: #415f9c; }
   .how-works h1 {
     color: white;
     width: intrinsic;
@@ -700,7 +697,10 @@ header {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
     .us .us-list .us-item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -714,7 +714,15 @@ header {
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      background-color: #4461a2;
+      height: 90%;
+      margin: 1em;
+      border: 2px solid #839acb;
+      border-radius: 10px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
       .us .us-list .us-item a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -726,9 +734,10 @@ header {
         -ms-flex-align: center;
         align-items: center; }
       .us .us-list .us-item img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         max-width: 14em;
-        height: 14em;
-        border-radius: 50%; }
+        height: 14em; }
 
 .participar {
   background-image: url(/images/mentoring.png);
