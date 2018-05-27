@@ -312,10 +312,10 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 2fr 3fr 2.5fr 2fr 2.5fr 2fr; }
+  grid-template-rows: 2fr 2.5fr 3.5fr 2fr 2.5fr 2fr; }
   @media screen and (max-width: 900px) {
     main {
-      grid-template-rows: 1fr 2fr 1fr 1.5fr 1.5fr 1fr; } }
+      grid-template-rows: 1fr 2fr 1.5fr 1.5fr 1.5fr 1fr; } }
 
 section, header {
   padding: 0 1em; }
@@ -487,15 +487,36 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     color: white; }
-    .how-works .how-works-list .how-works-list-mentor {
-      -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      width: 50%; }
+    .how-works .how-works-list .how-works-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 1em;
+      padding-right: 3em; }
+      .how-works .how-works-list .how-works-item:nth-child(even) {
+        text-align: right;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        padding-right: 0;
+        padding-left: 3em; }
+      .how-works .how-works-list .how-works-item .how-works-item-description {
+        margin: 1em;
+        max-width: 16em; }
 
 .our-mentors {
   display: grid;
